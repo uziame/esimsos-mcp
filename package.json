@@ -1,0 +1,39 @@
+{
+  "name": "esimsos-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for eSIM SOS: let Claude, ChatGPT and other AI agents find travel eSIM plans, compare prices and create an order the user pays by link.",
+  "mcpName": "net.esimsos/esimsos",
+  "type": "module",
+  "bin": {
+    "esimsos-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "node tests/proxy.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "esim",
+    "travel",
+    "claude",
+    "chatgpt"
+  ],
+  "homepage": "https://esimsos.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uziame/esimsos-mcp.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1"
+  }
+}

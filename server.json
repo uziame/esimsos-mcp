@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "net.esimsos/esimsos",
+  "title": "eSIM SOS",
+  "description": "Find travel eSIM plans, compare prices and create an order the user pays by link.",
+  "websiteUrl": "https://esimsos.net",
+  "repository": {
+    "url": "https://github.com/uziame/esimsos-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://esimsos.net/api/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "esimsos-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
