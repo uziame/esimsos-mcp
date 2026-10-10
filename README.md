@@ -9,7 +9,7 @@ An [MCP](https://modelcontextprotocol.io) server for [eSIM SOS](https://esimsos.
 Two ways to connect:
 
 - **Remote (recommended):** `https://esimsos.net/api/mcp` (Streamable HTTP, no sign-in).
-- **Local:** the `esimsos-mcp` npm package (stdio). It is a thin proxy to the remote endpoint and needs no keys.
+- **Local:** the `esimsos-mcp` package (stdio), installed straight from GitHub with `npx -y github:uziame/esimsos-mcp` (npm release coming soon). It is a thin proxy to the remote endpoint and needs no keys.
 
 ### Tools
 
@@ -43,7 +43,7 @@ Payment methods: `sbp` (Russian fast payments), `card` (Russian bank card), `car
   "mcpServers": {
     "esimsos": {
       "command": "npx",
-      "args": ["-y", "esimsos-mcp"]
+      "args": ["-y", "github:uziame/esimsos-mcp"]
     }
   }
 }
@@ -59,11 +59,11 @@ Payment methods: `sbp` (Russian fast payments), `card` (Russian bank card), `car
 }
 ```
 
-Or the local package: `{ "mcpServers": { "esimsos": { "command": "npx", "args": ["-y", "esimsos-mcp"] } } }`.
+Or the local package: `{ "mcpServers": { "esimsos": { "command": "npx", "args": ["-y", "github:uziame/esimsos-mcp"] } } }`.
 
 **ChatGPT.** Plugins → **+** → Add custom MCP server → enter a name and the URL `https://esimsos.net/api/mcp`, authentication: none → confirm the warning → Create as a plugin. Then start a new chat and pick the plugin with `@`. Availability depends on your plan and workspace policy. Docs: [Connect and test your plugin](https://developers.openai.com/apps-sdk/deploy/connect-chatgpt).
 
-**Any other client:** use the remote URL with Streamable HTTP, or run `npx -y esimsos-mcp` over stdio. To debug: `npx @modelcontextprotocol/inspector`.
+**Any other client:** use the remote URL with Streamable HTTP, or run `npx -y github:uziame/esimsos-mcp` over stdio. To debug: `npx @modelcontextprotocol/inspector`.
 
 ### Privacy and limits
 
@@ -84,7 +84,7 @@ Support: Telegram [@esimsos_bot](https://t.me/esimsos_bot), support@esimsos.ru. 
 Два способа подключения:
 
 - **Удалённо (рекомендуем):** `https://esimsos.net/api/mcp` (Streamable HTTP, без входа).
-- **Локально:** npm-пакет `esimsos-mcp` (stdio). Тонкий посредник к удалённому адресу, ключи не нужны.
+- **Локально:** пакет `esimsos-mcp` (stdio), ставится прямо с GitHub: `npx -y github:uziame/esimsos-mcp` (в npm выйдет позже). Тонкий посредник к удалённому адресу, ключи не нужны.
 
 ### Инструменты
 
@@ -118,7 +118,7 @@ Support: Telegram [@esimsos_bot](https://t.me/esimsos_bot), support@esimsos.ru. 
   "mcpServers": {
     "esimsos": {
       "command": "npx",
-      "args": ["-y", "esimsos-mcp"]
+      "args": ["-y", "github:uziame/esimsos-mcp"]
     }
   }
 }
@@ -134,11 +134,11 @@ Support: Telegram [@esimsos_bot](https://t.me/esimsos_bot), support@esimsos.ru. 
 }
 ```
 
-Или локальный пакет: `{ "mcpServers": { "esimsos": { "command": "npx", "args": ["-y", "esimsos-mcp"] } } }`.
+Или локальный пакет: `{ "mcpServers": { "esimsos": { "command": "npx", "args": ["-y", "github:uziame/esimsos-mcp"] } } }`.
 
 **ChatGPT.** Plugins → **+** → Add custom MCP server → название и адрес `https://esimsos.net/api/mcp`, аутентификация не нужна → подтвердите предупреждение → Create as a plugin. Затем новый чат и выбор плагина через `@`. Доступность зависит от тарифа и правил рабочего пространства. Документация: [Connect and test your plugin](https://developers.openai.com/apps-sdk/deploy/connect-chatgpt).
 
-**Другие клиенты:** удалённый адрес по Streamable HTTP или `npx -y esimsos-mcp` по stdio. Для отладки: `npx @modelcontextprotocol/inspector`.
+**Другие клиенты:** удалённый адрес по Streamable HTTP или `npx -y github:uziame/esimsos-mcp` по stdio. Для отладки: `npx @modelcontextprotocol/inspector`.
 
 ### Данные и ограничения
 
